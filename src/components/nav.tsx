@@ -52,7 +52,8 @@ export default function Nav() {
       <div className="mx-10 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
           <a href="/">
-            <h1 className="font-bold">LOGO</h1>
+            <img src="/ARGroup_logo_light.png" className="block dark:hidden aspect-auto w-32"/>
+            <img src="/ARGroup_logo_dark.png" className="hidden dark:block aspect-auto w-32"/>
           </a>
           <ul className="flex items-center gap-8">
             {navItems.map((item) => (
