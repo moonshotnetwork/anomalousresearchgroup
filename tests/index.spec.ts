@@ -46,17 +46,17 @@ test.describe("Home Page", () => {
   });
 
   test("hero section to have correct text", async ({ page }) => {
-    const heroImg = page.locator('[data-testid="hero-img"]');
-    const heroText = page.locator('[data-testid="hero-text"]');
+    const landscapeImg = page.locator('[data-testid="landscape-img"]');
+    const landscapeText = page.locator('[data-testid="landscape-text"]');
     const IntroText = page.locator('[data-testid="intro-text"]');
 
-    await expect(heroImg).toBeVisible();
+    await expect(landscapeImg).toBeVisible();
 
-    await expect(heroText).toBeVisible();
-    await expect(heroText).toHaveText("Main Keywords");
+    await expect(landscapeText).toBeVisible();
+    await expect(landscapeText).toHaveText("Our Mission");
 
     await expect(IntroText).toBeVisible();
-    await expect(IntroText).toHaveText("brief description of services");
+    await expect(IntroText).toHaveText("to keep you safe");
   });
 
   test("services section to have working links", async ({ page }) => {
