@@ -16,28 +16,35 @@ export default function Faq() {
       </h1>
       <Accordion type="single" collapsible className="w-full text-left">
         <AccordionItem value="item-1">
-          <AccordionTrigger>Can you do this particular job?</AccordionTrigger>
+          <AccordionTrigger>What do you do, anyway?</AccordionTrigger>
           <AccordionContent className="text-lg">
-            Yes. We do that particular job multiple times a week, sometimes
-            multiple times a day.
+            We research, contain, and in some extreme cases neutralize phenomena that cannot be explained by natural means that threaten our way of life, in order to protect and serve the American people.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>
-            I have been burned in the past, will that happen here?
+            So are you ghost hunters?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
-            Absoluetely not, we have a proven track record of successful jobs
-            and satisfied clients. Don't believe us? Check out our customer
-            reviews.
+            We're not just ghost hunters. We specialize in the tracking and containment of all sorts of harmful phenomena.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>When will you be available next?</AccordionTrigger>
+          <AccordionTrigger>I think I saw a fucked up guy, what should I do?</AccordionTrigger>
           <AccordionContent className="text-lg">
-            Our availablility is constantly changing, if you are interested in
-            working together please conact us through our comapany email or
-            phone, both can be found in our contact page.
+            Please contact us via our Tip Line page.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-4">
+          <AccordionTrigger>I made contact with an anomaly and am now experiencing anomalous effects, what should I do?</AccordionTrigger>
+          <AccordionContent className="text-lg">
+            Please contact us via our Tip Line page.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-5">
+          <AccordionTrigger>How do I get a job with you?</AccordionTrigger>
+          <AccordionContent className="text-lg">
+            Check out our Careers page for current openings in your area!
           </AccordionContent>
         </AccordionItem>
       </Accordion>

@@ -12,7 +12,6 @@ test.describe("Home Page", () => {
   }) => {
     const aboutLink = page.locator('[data-testid="nav-link-About"]');
     const servicesLink = page.locator('[data-testid="nav-link-Services"]');
-    const reviewsLink = page.locator('[data-testid="nav-link-Reviews"]');
     const contactLink = page.locator('[data-testid="nav-link-Contact"]');
     const faqLink = page.locator('[data-testid="nav-link-FAQ"]');
 
@@ -23,10 +22,6 @@ test.describe("Home Page", () => {
     await expect(servicesLink).toBeVisible();
     await servicesLink.click();
     await expect(page).toHaveURL("http://localhost:4321/Services");
-
-    await expect(reviewsLink).toBeVisible();
-    await reviewsLink.click();
-    await expect(page).toHaveURL("http://localhost:4321/Reviews");
 
     await expect(contactLink).toBeVisible();
     await contactLink.click();
