@@ -25,7 +25,7 @@ test.describe("Home Page", () => {
 
     await expect(contactLink).toBeVisible();
     await contactLink.click();
-    await expect(page).toHaveURL("http://localhost:4321/Contact");
+    await expect(page).toHaveURL("http://localhost:4321/Tip-line");
 
     await expect(faqLink).toBeVisible();
     await faqLink.click();

@@ -44,7 +44,7 @@ export default function Faq() {
         <AccordionItem value="item-5">
           <AccordionTrigger>How do I get a job with you?</AccordionTrigger>
           <AccordionContent className="text-lg">
-            Check out our Careers page for current openings in your area!
+            Check out our <a href="/Careers" className="hover:underline">Careers page</a> for current openings in your area!
           </AccordionContent>
         </AccordionItem>
       </Accordion>
