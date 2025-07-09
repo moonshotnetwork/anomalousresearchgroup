@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MoreService from "../../components/moreService.astro";
+import AboutDesc from "../../components/about.astro";
+
+//adjust these variable to change your content
+const title = "Careers";
+const introText = "Do you want to live an exciting life in service of protecting the American people?";
+---
+
+<Layout title="Anomalous Research Group | Careers">
+  <div
+    class="flex h-[40vh] items-center justify-center bg-[url('/landscape.jpg')] bg-cover bg-center py-20 text-center text-6xl font-bold text-white shadow-xl"
+  >
+    <p
+      transition:name="heroTxt"
+      class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)]"
+    >
+      {title}
+    </p>
+  </div>
+  <h1
+    transition:name="introTxt"
+    class="m-10 text-center text-xl font-bold"
+  >
+    Are you looking for an exciting life in defense of the American people? If so, we may have a role for you!
+  </h1>
+  <div class="lg:mx-60 md:mx-40 sm:mx-10 p-5 text-xl" transition:name="introTxt">
+    <h3>Open Roles</h3>
+    <ul>
+        <li><a href="/Careers/Intern">Intern</a></li>
+        <li><a href="/Careers/Sanitation-staff">Sanitation Staff</a></li>
+        <li><a href="/Careers/Cafeteria-worker">Cafeteria Worker (Burger They&trade;)</a></li>
+    </ul>
+  </div>
+
+</Layout>
+
+<style>
+    ul {
+        list-style: none;
+        list-style-position: inside;
+    }
+    h3 {
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 4px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    li {
+        background: url(/argroup-icon.svg) no-repeat left 10px;
+        background-size: 13px;
+        padding-left: 18px;
+        margin-top: 5px;
+    }
+</style>

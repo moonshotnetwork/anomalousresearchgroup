@@ -1,0 +1,72 @@
+---
+import Layout from "../../layouts/Job.astro";
+
+//adjust these variable to change your content
+const title = "Cafeteria Worker (Burger They&trade;)";
+const introText = "America's first line defense against hunger";
+---
+
+<Layout title="Anomalous Research Group | Cafeteria Worker">
+  <div
+    class="flex items-center justify-center bg-cover bg-center pt-20 text-center text-6xl font-bold text-white"
+  >
+    <p
+      transition:name="heroTxt"
+      class="text-gray-900 dark:text-gray-300"
+    >
+      Cafeteria Worker (Burger They&trade;)
+    </p>
+  </div>
+  <h1
+    transition:name="introTxt"
+    class="m-10 mb-20 mt-5 text-center text-xl font-bold text-gray-900 dark:text-gray-300"
+  >
+    {introText}
+  </h1>
+  <div class="lg:mx-20 sm:mx-5 p-5 text-xl shadow-xl rounded-lg dark:bg-gray-900" transition:name="introTxt">
+    <p>The Cafeteria Worker will fulfill the following responsibilities:</p>
+    <ul>
+        <li>Provide acceptable service to on-site staff</li>
+        <li>Cook and serve food in accordance with brand standards for quality</li>
+        <li>Maintain sanitation standards in accorance with local laws</li>
+        <li>Present the Burger They&trade; brand in a positive light to otherworldy entities who may be interested in franchising</li>
+    </ul>
+    <h3>Required Skills</h3>
+    <ul>
+        <li></li>
+        <li>Embodies the Burger They&trade; lifestyle</li>
+        <li>Up-to-date first-aid certification</li>
+        <li>Ability to lift 50 lbs overhead</li>
+        <li>Applicants must be U.S. Citizens, Nationals, or those who have formally pledged allegiance to the U.S. via permanent or semipermanent tattoo (notarized)</li>
+    </ul>
+    <h3>Hours</h3>
+    <p>All hours</p>
+    <h3>Estimated Salary</h3>
+    <p>$15-$18/hr</p>
+    <h3>How to Apply</h3>
+    <p>Please send your resume and cover letter to <a href="mailto:careers@anomalousresearchgroup.com">careers@anomalousresearchgroup.com</a></p>
+  </div>
+
+</Layout>
+
+<style>
+    ul {
+        list-style: none;
+        list-style-position: inside;
+    }
+    h3 {
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 4px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    li {
+        background: url(/argroup-icon.svg) no-repeat left 10px;
+        background-size: 13px;
+        padding-left: 18px;
+        margin-top: 5px;
+    }
+</style>

@@ -18,7 +18,7 @@ This is a simple, responsive website template for small businesses. It consists 
 2. **About Us**
 3. **Services**
 4. **Careers**
-5. **Contact Us**
+5. **Tip Line**
 
 ### Features
 

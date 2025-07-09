@@ -1,0 +1,66 @@
+---
+import Layout from "../../layouts/Job.astro";
+
+//adjust these variable to change your content
+const title = "Sanitation Staff";
+const introText = "America's first line defense against clutter";
+---
+
+<Layout title="Anomalous Research Group | Sanitation Staff">
+  <div
+    class="flex items-center justify-center bg-cover bg-center pt-20 text-center text-6xl font-bold text-white"
+  >
+    <p
+      transition:name="heroTxt"
+      class="text-gray-900 dark:text-gray-300"
+    >
+      {title}
+    </p>
+  </div>
+  <h1
+    transition:name="introTxt"
+    class="m-10 mb-20 mt-5 text-center text-xl font-bold text-gray-900 dark:text-gray-300"
+  >
+    {introText}
+  </h1>
+  <div class="lg:mx-20 sm:mx-5 p-5 text-xl shadow-xl rounded-lg dark:bg-gray-900" transition:name="introTxt">
+    <p>Sanitation staff are the first and last say in the overall safety of our facilities. They look after the cleanliness of the site from the parking lot to restrooms to the long term storage buildings, they maintain a clean and safe environment.</p>
+    <h3>Required Skills</h3>
+    <ul>
+        <li>Minimum 8 years experience with mops, brooms, and vacuum cleaners</li>
+        <li>Active drivers license</li>
+        <li>Up-to-date first-aid certification</li>
+        <li>Ability to lift 50 lbs overhead</li>
+        <li>Applicants must be U.S. Citizens, Nationals, or those who have formally pledged allegiance to the U.S. via permanent or semipermanent tattoo (notarized)</li>
+    </ul>
+    <h3>Hours</h3>
+    <p>Overnight</p>
+    <h3>Estimated Salary</h3>
+    <p>$15-$23/hr</p>
+    <h3>How to Apply</h3>
+    <p>Please send your resume and cover letter to <a href="mailto:careers@anomalousresearchgroup.com" class="text-sm sm:text-xl">careers@anomalousresearchgroup.com</a></p>
+  </div>
+
+</Layout>
+
+<style>
+    ul {
+        list-style: none;
+        list-style-position: inside;
+    }
+    h3 {
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 4px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    li {
+        background: url(/argroup-icon.svg) no-repeat left 10px;
+        background-size: 13px;
+        padding-left: 18px;
+        margin-top: 5px;
+    }
+</style>
