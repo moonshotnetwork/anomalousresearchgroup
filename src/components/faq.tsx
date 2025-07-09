@@ -32,13 +32,13 @@ export default function Faq() {
         <AccordionItem value="item-3">
           <AccordionTrigger>I think I saw a fucked up guy, what should I do?</AccordionTrigger>
           <AccordionContent className="text-lg">
-            Please contact us via our Tip Line page.
+            Please contact us via our <a href="https://forms.gle/e9PbqPwQA1bJNxW2A">Tip Line</a> page.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
           <AccordionTrigger>I made contact with an anomaly and am now experiencing anomalous effects, what should I do?</AccordionTrigger>
           <AccordionContent className="text-lg">
-            Please contact us via our Tip Line page.
+            Please contact us via our <a href="https://forms.gle/e9PbqPwQA1bJNxW2A">Tip Line</a> page.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
