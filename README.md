@@ -18,7 +18,8 @@ This is a simple, responsive website template for small businesses. It consists 
 2. **About Us**
 3. **Services**
 4. **Careers**
-5. **Tip Line**
+5. **Games for Kids**
+6. **Tip Line**
 
 ### Features
 

@@ -16,6 +16,7 @@ const navItems = [
   { href: "/About", label: "About" },
   { href: "/Services", label: "Services" },
   { href: "/Careers", label: "Careers" },
+  { href: "/Games-for-kids", label: "Games" },
   { href: "https://forms.gle/e9PbqPwQA1bJNxW2A", label: "Tip Line" },
   { href: "/#FAQ", label: "FAQ" },
 ];
@@ -34,7 +35,7 @@ export function MobileNav() {
         <a href="/">
             <img src="/ARGroup_logo_light.png" className="block dark:hidden sicko:hidden aspect-auto w-32"/>
             <img src="/ARGroup_logo_dark.png" className="hidden dark:block sicko:hidden aspect-auto w-32"/>
-            <img src="/ARGroup-logo-dark.png" className="hidden dark:hidden sicko:block aspect-auto w-32"/>
+            <img src="/ARGroup-logo-sickos.png" className="hidden dark:hidden sicko:block aspect-auto w-32"/>
         </a>
         <div className="flex items-center gap-2">
           <NavigationMenu>

@@ -35,6 +35,7 @@ const navItems = [
   { href: "/About", label: "About" },
   { href: "/Services", label: "Services" },
   { href: "/Careers", label: "Careers" },
+  { href: "/Games-for-kids", label: "Games"},
   { href: "https://forms.gle/e9PbqPwQA1bJNxW2A", label: "Tip Line" },
   { href: "/#FAQ", label: "FAQ" },
 ];
