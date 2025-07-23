@@ -75,7 +75,7 @@ export function ThemeToggle() {
       >
         <MenuItem onClick={() => setTheme("light")} className="hover:underline">Light Mode</MenuItem>
         <MenuItem onClick={() => setTheme("dark")} className="hover:underline">Dark Mode</MenuItem>
-        <MenuItem onClick={() => setTheme("sicko")} className="hover:underline">⛧⛧⛧⛧</MenuItem>
+        <MenuItem onClick={() => setTheme("sicko")} className="hover:underline">⛧⛧⛧⛧⛧</MenuItem>
       </ControlledMenu>
     </>
   );
