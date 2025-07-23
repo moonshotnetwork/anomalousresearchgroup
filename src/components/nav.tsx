@@ -40,6 +40,16 @@ const navItems = [
   { href: "/#FAQ", label: "FAQ" },
 ];
 
+const navItemsSickos = [
+  { href: "/", label: "Home" },
+  { href: "/About", label: "About" },
+  { href: "/Services", label: "Services" },
+  { href: "/Careers", label: "Careers" },
+  { href: "/Games-for-kids", label: "Games"},
+  { href: "https://forms.gle/Fn3qrAh1Wk1FwKiV7", label: "Tip Line" },
+  { href: "/#FAQ", label: "FAQ" },
+];
+
 export default function Nav() {
   const [activePath, setActivePath] = React.useState<string>("");
 
@@ -57,8 +67,23 @@ export default function Nav() {
             <img src="/ARGroup_logo_dark.png" className="hidden dark:block sicko:hidden aspect-auto w-32"/>
             <img src="/ARGroup-logo-sickos.png" className="hidden dark:hidden sicko:block aspect-auto w-32"/>
           </a>
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-8 sicko:hidden">
             {navItems.map((item) => (
+              <NavLink
+                key={item.href}
+                href={item.href}
+                isActive={activePath === item.href}
+                testId={`nav-link-${item.label}`}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+            <li>
+              <ThemeToggle data-testid="theme-toggle-desktop" />
+            </li>
+          </ul>
+          <ul className="hidden items-center gap-8 sicko:flex">
+            {navItemsSickos.map((item) => (
               <NavLink
                 key={item.href}
                 href={item.href}

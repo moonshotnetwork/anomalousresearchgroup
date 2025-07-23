@@ -1,6 +1,7 @@
 ---
 import Button from "./button.astro";
 const link = "https://forms.gle/e9PbqPwQA1bJNxW2A";
+const linkSicko = "https://forms.gle/Fn3qrAh1Wk1FwKiV7";
 const name = "redirect to Tip Line";
 
 // adjust these variable to change your content
@@ -26,6 +27,11 @@ const smallText =
     >
       {smallText}
     </h2>
-    <Button link={link} text={text} name={name} />
+    <div class="block sicko:hidden">
+      <Button link={link} text={text} name={name}/>
+    </div>
+    <div class="hidden sicko:block">
+      <Button link={linkSicko} text={text} name={name}/>
+    </div>
   </div>
 </section>
