@@ -15,7 +15,16 @@ const secondaryText = "to keep you safe";
     src="/landscape.jpg"
     alt="hero"
     loading="eager"
-    class="absolute inset-0 h-full w-full object-cover"
+    class="absolute inset-0 h-full w-full object-cover sicko:hidden"
+    width={1920}
+    height={1080}
+  />
+  <Image
+    data-testid="landscape-sicko-img"
+    src="/landscape-sicko.png"
+    alt="hero"
+    loading="eager"
+    class="absolute inset-0 h-full w-full object-cover hidden dark:hidden sicko:block"
     width={1920}
     height={1080}
   />

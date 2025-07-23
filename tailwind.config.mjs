@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import plugin from "tailwindcss/plugin";
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -72,5 +75,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    plugin(function ({ addVariant, e}) {
+      addVariant("sicko", ":is(:where(.sicko) &)");
+    }),
+  ],
 }

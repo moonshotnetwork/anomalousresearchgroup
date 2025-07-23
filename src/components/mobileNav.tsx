@@ -32,8 +32,9 @@ export function MobileNav() {
     <div className="relative p-2 text-4xl md:hidden">
       <nav className="my-4 flex items-center justify-between">
         <a href="/">
-            <img src="/ARGroup_logo_light.png" className="block dark:hidden aspect-auto w-32"/>
-            <img src="/ARGroup_logo_dark.png" className="hidden dark:block aspect-auto w-32"/>
+            <img src="/ARGroup_logo_light.png" className="block dark:hidden sicko:hidden aspect-auto w-32"/>
+            <img src="/ARGroup_logo_dark.png" className="hidden dark:block sicko:hidden aspect-auto w-32"/>
+            <img src="/ARGroup-logo-dark.png" className="hidden dark:hidden sicko:block aspect-auto w-32"/>
         </a>
         <div className="flex items-center gap-2">
           <NavigationMenu>
