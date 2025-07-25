@@ -7,6 +7,7 @@ const { title } = Astro.props;
 import Nav from "../components/nav.tsx";
 import Action from "../components/action.astro";
 import Footer from "../components/footer.astro";
+import GlitchFilter from "../components/glitchfilter.tsx";
 import { ClientRouter } from 'astro:transitions';
 import "../styles/tailwind.css";
 ---
@@ -53,9 +54,12 @@ import "../styles/tailwind.css";
   <body
     class="bg-gray-100 text-neutral-950 dark:bg-neutral-950 sicko:bg-neutral-950 dark:text-white sicko:text-white"
   >
-    <Nav client:load />
+    <GlitchFilter />
+    <div style="filter: url(#glitchfilter);">
+    <Nav client:load/>
     <slot />
     <Action />
     <Footer />
+    </div>
   </body>
 </html>

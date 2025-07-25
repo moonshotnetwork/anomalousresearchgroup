@@ -42,3 +42,7 @@ To get started with this project:
 ```bash
 pnpm i dillonpw-small-bis
 ```
+
+## Glitch Effect
+
+The glitch effect was accomplished by adapting [this code](https://github.com/metaory/glitcher-app/) from [metaory](https://github.com/metaory). They have a wonderful demo app of this that you can find [here](https://metaory.github.io/glitcher-app/).
