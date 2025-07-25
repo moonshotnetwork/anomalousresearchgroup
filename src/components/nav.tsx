@@ -9,6 +9,7 @@ interface NavLinkProps {
   children: React.ReactNode;
   isActive: boolean;
   testId: string;
+  className: string;
 }
 
 const NavLink: React.FC<NavLinkProps> = ({
@@ -16,8 +17,9 @@ const NavLink: React.FC<NavLinkProps> = ({
   children,
   isActive,
   testId,
+  className,
 }) => (
-  <li>
+  <li className={className}>
     <a
       data-testid={testId}
       className={`un rounded-lg md:text-xl lg:text-2xl xl:text-4xl ${
@@ -67,28 +69,25 @@ export default function Nav() {
             <img src="/ARGroup_logo_dark.png" className="hidden dark:block sicko:hidden aspect-auto w-32"/>
             <img src="/ARGroup-logo-sickos.png" className="hidden dark:hidden sicko:block aspect-auto w-32"/>
           </a>
-          <ul className="flex items-center gap-8 sicko:hidden">
+          <ul className="flex items-center gap-8">
             {navItems.map((item) => (
               <NavLink
                 key={item.href}
                 href={item.href}
                 isActive={activePath === item.href}
                 testId={`nav-link-${item.label}`}
+                className="block sicko:hidden"
               >
                 {item.label}
               </NavLink>
             ))}
-            <li>
-              <ThemeToggle data-testid="theme-toggle-desktop" />
-            </li>
-          </ul>
-          <ul className="hidden items-center gap-8 sicko:flex">
             {navItemsSickos.map((item) => (
               <NavLink
                 key={item.href}
                 href={item.href}
                 isActive={activePath === item.href}
                 testId={`nav-link-${item.label}`}
+                className="hidden sicko:block"
               >
                 {item.label}
               </NavLink>
