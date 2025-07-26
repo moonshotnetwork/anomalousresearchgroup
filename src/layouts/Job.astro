@@ -5,9 +5,9 @@ interface Props {
 
 const { title } = Astro.props;
 import Nav from "../components/nav.tsx";
-import Action from "../components/action.astro";
 import Footer from "../components/footer.astro";
 import { ClientRouter } from 'astro:transitions';
+import GlitchFilter from "../components/glitchfilter.tsx";
 import "../styles/tailwind.css";
 ---
 
@@ -53,6 +53,7 @@ import "../styles/tailwind.css";
   <body
     class="bg-gray-100 text-neutral-950 dark:bg-neutral-950 sicko:bg-neutral-950 dark:text-white sicko:text-white min-h-screen flex flex-col flex-start"
   >
+    <GlitchFilter />
     <Nav client:load />
     <slot />
     <Footer />

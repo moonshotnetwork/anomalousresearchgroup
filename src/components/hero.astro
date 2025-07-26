@@ -24,7 +24,7 @@ const secondaryText = "to keep you safe";
     src="/landscape-sicko.png"
     alt="hero"
     loading="eager"
-    class="absolute inset-0 h-full w-full object-cover hidden dark:hidden sicko:block"
+    class="absolute inset-0 h-full w-full object-cover hidden dark:hidden sicko:block filter-[url(#glitchfilter)]"
     width={1920}
     height={1080}
   />
@@ -34,14 +34,14 @@ const secondaryText = "to keep you safe";
     <h1
     data-testid="landscape-text"
       transition:name="heroTxt"
-      class="text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl"
+      class="text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl filter-[url(#glitchfilter)]"
     >
       {mainText}
     </h1>
     <h2
       data-testid="intro-text"
       transition:name="introTxt"
-      class="pb-6 text-center text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-4xl"
+      class="pb-6 text-center text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-4xl filter-[url(#glitchfilter)]"
     >
       {secondaryText}
     </h2>

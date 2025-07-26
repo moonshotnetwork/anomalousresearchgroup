@@ -11,10 +11,10 @@ export default function Faq() {
       id="FAQ"
       className="mx-6 mt-60 flex flex-col items-center justify-center text-xl md:mx-40"
     >
-      <h1 className="mb-10 text-center text-4xl md:text-left">
+      <h1 className="mb-10 text-center text-4xl md:text-left filter-[url(#glitchfilter)]">
         Frequently Asked Questions
       </h1>
-      <Accordion type="single" collapsible className="w-full text-left">
+      <Accordion type="single" collapsible className="w-full text-left filter-[url(#glitchfilter)]">
         <AccordionItem value="item-1">
           <AccordionTrigger>What do you do, anyway?</AccordionTrigger>
           <AccordionContent className="text-lg block sicko:hidden">
